@@ -1,0 +1,106 @@
+/* pages/light/index.wxss */
+.page-light-index {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.bgImg {
+  position: absolute;
+  height: 615rpx;
+  width: 100%;
+  object-fit: cover;
+}
+.other-wigdget{
+  position: absolute;
+  top: 128rpx;
+  left: 40rpx;
+  z-index: 99;
+
+}
+.other-wigdget1{
+  position: absolute;
+  top: 200rpx;
+  left: 100rpx;
+}
+.other-wigdget2{
+  position: absolute;
+  top: 272rpx;
+  left: 206rpx;
+
+}
+.other-wigdget3{
+  position: absolute;
+  top: 284rpx;
+  left: 370rpx;
+
+}
+.other-wigdget4{
+  position: absolute;
+  top: 228rpx;
+  right: 30rpx;
+}
+.other-wigdget5{
+  position: absolute;
+  top: 192rpx;
+right: 200rpx;
+
+}
+.line{
+position: absolute;
+top: 151rpx;
+left: 65rpx;
+width: 97rpx;
+height: 4rpx;
+background-color: blue;
+transform-origin: 0% 0%;
+transform: rotate(50deg);
+/* transform: skew(0deg, 50deg); */
+/* transform: rotate(45deg) scale(0.5) skew(30deg, 30deg) translate(100px, 100px); */
+
+}
+@keyframes dmAnimation2{ 
+  0% { transform: translateX(0); } 
+  100% { transform: translateX(-130%); } 
+}
+
+@keyframes dmAnimation{
+  from{ left: 100%; }
+  to{ left: -100%; }
+}
+.animationSlow {
+  width: 97rpx;
+height: 4rpx;
+ background-color: orange;
+ animation-name: myfirst; /*动画的名称 */
+ animation-duration: 2000ms; /*动画从开始到结束的时间*/
+ animation-timing-function: linear; /*动画执行快慢的参数*/
+ animation-iteration-count: 1; /*动画执行多少次的参数*//*以下是兼容ios所需，参数意义与上相同*/
+ -webkit-animation-name: myfirst;
+ -webkit-animation-duration: 2000ms;
+ -webkit-animation-timing-function: linear;
+ -webkit-animation-iteration-count: 1;
+ animation-fill-mode: forwards; /*让动画停留在最后一帧 */
+ -moz-animation-fill-mode: forwards; 
+ -webkit-animation-fill-mode: forwards; 
+ -o-animation-fill-mode: forwards;
+
+}
+@keyframes myfirst {
+ /*开始转的角度*/
+ from {
+   transform: rotate(0deg);
+ }/*结束的角度*/
+ to {
+   transform: rotate(50deg);
+ }
+}
+/*兼容ios*/
+@-webkit-keyframes myfirst {
+ from {
+   transform: rotate(0deg);
+ }
+ to {
+   transform: rotate(50deg);
+ }
+}

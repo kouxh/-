@@ -1,0 +1,39 @@
+<view class="page-light-index">
+	<image class="bgImg" src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3728342271,3331165432&fm=26&gp=0.jpg"></image>
+	<view class="other-wigdget">
+		<icon class="icon-small" type="success" size="23" wx:if="{{condition}}"></icon>
+		<icon class="icon-small" type="circle" size="23" wx:else></icon>
+	</view>
+	<view class="line animationSlow" wx:if="{{condition&&condition1}}"></view>
+	<view class="other-wigdget1">
+  <icon class="icon-small" type="success" size="23" wx:if="{{condition1}}"></icon>
+		<icon class="icon-small" type="circle" size="23"  wx:else></icon>
+		
+	</view>
+	<view class="other-wigdget2">
+  <icon class="icon-small" type="success" size="23" wx:if="{{condition2}}"></icon>
+		<icon class="icon-small" type="circle" size="23"  wx:else></icon>
+		
+	</view>
+	<view class="other-wigdget3">
+  <icon class="icon-small" type="success" size="23" wx:if="{{condition3}}"></icon>
+		<icon class="icon-small" type="circle" size="23"  wx:else></icon>
+		
+	</view>
+	<view class="other-wigdget4">
+  <icon class="icon-small" type="success" size="23" wx:if="{{condition4}}"></icon>
+		<icon class="icon-small" type="circle" size="23"  wx:else></icon>
+		
+	</view>
+	<view class="other-wigdget5">
+  <icon class="icon-small" type="success" size="23" wx:if="{{condition5}}"></icon>
+		<icon class="icon-small" type="circle" size="23"  wx:else></icon>
+		
+	</view>
+	<view class="other-wigdget6">
+  <icon class="icon-small" type="success" size="23" wx:if="{{condition6}}"></icon>
+		<icon class="icon-small" type="circle" size="23"  wx:else></icon>
+		
+	</view>
+	<canvas id="myCanvas" width="650" height="1198" style="position: absolute;"></canvas>
+</view>
